@@ -61,7 +61,18 @@ const project = defineCollection({
 		}),
 });
 
+const album = defineCollection({
+	type: "data",
+	schema: ({ image }) =>
+		z.object({
+			title: z.string(),
+			description: z.string().optional(),
+			cover: image(),
+		}),
+});
+
 export const collections = {
 	post: post,
 	project: project,
+	album: album,
 };
