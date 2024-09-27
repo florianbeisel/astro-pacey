@@ -1,0 +1,23 @@
+---
+import { getAllProjects } from "@/data/project";
+import ProjectLayout from "@/layouts/Project.astro";
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+
+// if you're using an adaptor in SSR mode, getStaticPaths wont work -> https://docs.astro.build/en/guides/routing/#modifying-the-slug-example-for-ssr
+export const getStaticPaths = (async () => {
+	const projectEntries = await getAllProjects();
+	return projectEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<ProjectLayout project={entry}>
+	<Content />
+</ProjectLayout>

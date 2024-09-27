@@ -11,37 +11,63 @@ const meta = {
 
 <PageLayout meta={meta}>
 	<div class="space-y-6">
-		<h1 class="title">About</h1>
-		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
-		</p>
-		<div class="flex justify-center">
-			<Image
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				fetchpriority="high"
-				loading="eager"
-				src={aboutImg}
-			/>
-		</div>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
-		<p>
-			Clone or fork my <a
-				aria-label="github repository"
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				rel="noreferrer"
-				target="_blank">repo</a
-			> if you like me!
-		</p>
+		<article class="flex-grow break-words">
+			<div
+				class="prose prose-base prose-cactus mt-12 prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none"
+			>
+				<h1 class="title">About</h1>
+				<p>
+					Florian's love for technology was ignited by his childhood friend, Jan, a tech whiz who
+					introduced him to the fascinating world of Linux, gaming, and the Perl programming
+					language. An unforgettable night spent within their school building, learning the basics
+					of Perl, was the spark that ignited Florian's enduring passion for technology. This
+					passion was further fueled by numerous LAN parties and gaming sessions that provided
+					hands-on experience with networks and systems.
+				</p>
+				<h2>Career Path</h2><p>
+					Florian's professional journey in IT started in 2002 in the dual education system of
+					Germany. His career has seen him wearing many hats, from an internal IT administrator at
+					MOTIP DUPLI to a programmer at EGOTEC GmbH. He moved on to join Genodata EDV Systeme's
+					support team, where he specialized in creating sophisticated SQL statements for banking
+					customers. His journey then led him to Siller AG as a system administrator focusing on
+					automation and software deployment, where he also honed his skills in networking and VPN
+					administration.
+				</p>
+				<p>
+					Following the acquisition of Siller AG by his current employer, INTERSPORT Deutschland eG,
+					Florian transitioned from an external-facing support role to an internal role in their
+					data center management and operations team.
+				</p>
+				<h2 id="personal-life-and-perspectives">Personal Life and Perspectives</h2><p>
+					Florian's life experiences, especially his fight against cancer and journey as a father,
+					have significantly influenced his perspective on life and work. His battle against cancer
+					has imparted a valuable lesson – that no one is invulnerable, and every moment is
+					precious. As a father, he cherishes watching his children grow into unique individuals.
+				</p>
+				<h2 id="passions-and-hobbies">Passions and Hobbies</h2><p>
+					Role-playing games hold a special place in Florian's heart. Introduced to the hobby by
+					school friends and encouraged by his fiancée, Nora, he loves the escapism it provides.
+					Role-playing allows him to explore different personalities and traits, overcoming his
+					insecurities and immersing himself in captivating adventures.
+				</p>
+				<p>
+					Florian's interest in aviation, specifically drones and ultralight aircraft, was inspired
+					by his fiancée's father, an ultralight pilot instructor. This hobby not only satisfies his
+					love for technology and understanding but also allows him to experience the thrill of the
+					skies.
+				</p>
+				<h2 id="future-dreams-and-philosophies">Future Dreams and Philosophies</h2><p>
+					Florian's future goals are a reflection of his resilient spirit. His primary goal is to
+					overcome cancer and serve as a beacon of hope for others in similar situations. He firmly
+					believes that if an ordinary person like him can triumph over such adversity, so can
+					others.
+				</p>
+				<p>
+					His guiding philosophies in life are encapsulated in the phrases "Don't stop believing"
+					and "Nothing ever came from a life that was a simple one." These tenets are a testament to
+					his relentless optimism and his belief in the value of facing and overcoming challenges.
+				</p>
+			</div>
+		</article>
 	</div>
 </PageLayout>
