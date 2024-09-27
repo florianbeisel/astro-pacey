@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import aboutImg from "@/assets/about-astro.png";
+import aboutImg from "@/assets/about-pacey.png";
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
@@ -10,64 +10,105 @@ const meta = {
 ---
 
 <PageLayout meta={meta}>
-	<div class="space-y-6">
-		<article class="flex-grow break-words">
-			<div
-				class="prose prose-base prose-cactus mt-12 prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none"
-			>
-				<h1 class="title">About</h1>
-				<p>
-					Florian's love for technology was ignited by his childhood friend, Jan, a tech whiz who
-					introduced him to the fascinating world of Linux, gaming, and the Perl programming
-					language. An unforgettable night spent within their school building, learning the basics
-					of Perl, was the spark that ignited Florian's enduring passion for technology. This
-					passion was further fueled by numerous LAN parties and gaming sessions that provided
-					hands-on experience with networks and systems.
-				</p>
-				<h2>Career Path</h2><p>
-					Florian's professional journey in IT started in 2002 in the dual education system of
-					Germany. His career has seen him wearing many hats, from an internal IT administrator at
-					MOTIP DUPLI to a programmer at EGOTEC GmbH. He moved on to join Genodata EDV Systeme's
-					support team, where he specialized in creating sophisticated SQL statements for banking
-					customers. His journey then led him to Siller AG as a system administrator focusing on
-					automation and software deployment, where he also honed his skills in networking and VPN
-					administration.
-				</p>
-				<p>
-					Following the acquisition of Siller AG by his current employer, INTERSPORT Deutschland eG,
-					Florian transitioned from an external-facing support role to an internal role in their
-					data center management and operations team.
-				</p>
-				<h2 id="personal-life-and-perspectives">Personal Life and Perspectives</h2><p>
-					Florian's life experiences, especially his fight against cancer and journey as a father,
-					have significantly influenced his perspective on life and work. His battle against cancer
-					has imparted a valuable lesson – that no one is invulnerable, and every moment is
-					precious. As a father, he cherishes watching his children grow into unique individuals.
-				</p>
-				<h2 id="passions-and-hobbies">Passions and Hobbies</h2><p>
-					Role-playing games hold a special place in Florian's heart. Introduced to the hobby by
-					school friends and encouraged by his fiancée, Nora, he loves the escapism it provides.
-					Role-playing allows him to explore different personalities and traits, overcoming his
-					insecurities and immersing himself in captivating adventures.
-				</p>
-				<p>
-					Florian's interest in aviation, specifically drones and ultralight aircraft, was inspired
-					by his fiancée's father, an ultralight pilot instructor. This hobby not only satisfies his
-					love for technology and understanding but also allows him to experience the thrill of the
-					skies.
-				</p>
-				<h2 id="future-dreams-and-philosophies">Future Dreams and Philosophies</h2><p>
-					Florian's future goals are a reflection of his resilient spirit. His primary goal is to
-					overcome cancer and serve as a beacon of hope for others in similar situations. He firmly
-					believes that if an ordinary person like him can triumph over such adversity, so can
-					others.
-				</p>
-				<p>
-					His guiding philosophies in life are encapsulated in the phrases "Don't stop believing"
-					and "Nothing ever came from a life that was a simple one." These tenets are a testament to
-					his relentless optimism and his belief in the value of facing and overcoming challenges.
-				</p>
-			</div>
-		</article>
+	<h1 class="title mb-6">About</h1>
+	<div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
+		<section aria-label="About me">
+			<h2 class="title text-lg">Who are you!? Why are you talking to me?</h2>
+			<article class="flex-grow break-words">
+				<div
+					class="prose prose-sm prose-cactus mt-12 prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none"
+				>
+					<p>
+						Florian's love for technology was ignited by his childhood friend, Jan, a tech whiz who
+						introduced him to the fascinating world of Linux, gaming, and the Perl programming
+						language. An unforgettable night spent within their school building, learning the basics
+						of Perl, was the spark that ignited Florian's enduring passion for technology. This
+						passion was further fueled by numerous LAN parties and gaming sessions that provided
+						hands-on experience with networks and systems.
+					</p>
+					<h2 id="career-path">Career Path</h2><p>
+						Florian's professional journey in IT started in 2002 in the dual education system of
+						Germany. His career has seen him wearing many hats, from an internal IT administrator at
+						MOTIP DUPLI to a programmer at EGOTEC GmbH. He moved on to join Genodata EDV Systeme's
+						support team, where he specialized in creating sophisticated SQL statements for banking
+						customers. His journey then led him to Siller AG as a system administrator focusing on
+						automation and software deployment, where he also honed his skills in networking and VPN
+						administration.
+					</p>
+					<p>
+						Following the acquisition of Siller AG by his current employer, INTERSPORT Deutschland
+						eG, Florian transitioned from an external-facing support role to an internal role in
+						their data center management and operations team.
+					</p>
+					<h2 id="personal-life-and-perspectives">Personal Life and Perspectives</h2><p>
+						Florian's life experiences, especially his fight against cancer and journey as a father,
+						have significantly influenced his perspective on life and work. His battle against
+						cancer has imparted a valuable lesson – that no one is invulnerable, and every moment is
+						precious. As a father, he cherishes watching his children grow into unique individuals.
+					</p>
+					<h2 id="passions-and-hobbies">Passions and Hobbies</h2><p>
+						Role-playing games hold a special place in Florian's heart. Introduced to the hobby by
+						school friends and encouraged by his fiancée, Nora, he loves the escapism it provides.
+						Role-playing allows him to explore different personalities and traits, overcoming his
+						insecurities and immersing himself in captivating adventures.
+					</p>
+					<p>
+						Florian's interest in aviation, specifically drones and ultralight aircraft, was
+						inspired by his fiancée's father, an ultralight pilot instructor. This hobby not only
+						satisfies his love for technology and understanding but also allows him to experience
+						the thrill of the skies.
+					</p>
+					<h2 id="future-dreams-and-philosophies">Future Dreams and Philosophies</h2><p>
+						Florian's future goals are a reflection of his resilient spirit. His primary goal is to
+						overcome cancer and serve as a beacon of hope for others in similar situations. He
+						firmly believes that if an ordinary person like him can triumph over such adversity, so
+						can others.
+					</p>
+					<p>
+						His guiding philosophies in life are encapsulated in the phrases "Don't stop believing"
+						and "Nothing ever came from a life that was a simple one." These tenets are a testament
+						to his relentless optimism and his belief in the value of facing and overcoming
+						challenges.
+					</p>
+				</div>
+			</article>
+		</section>
+		<aside>
+			<h2 class="font-semibold text-accent-2">Table of Contents</h2>
+			<ul class="mb-8 mt-4 text-xs">
+				<li>
+					<a
+						aria-label={`Scroll to section: Career Path`}
+						class={`block line-clamp-2 hover:text-accent mt-3`}
+						href={`#career-path`}><span class="me-0.5">#</span>Career Path</a
+					>
+				</li>
+				<li>
+					<a
+						aria-label={`Scroll to section: Personal Life and Perspectives`}
+						class={`block line-clamp-2 hover:text-accent mt-3`}
+						href={`#personal-life-and-perspectives`}
+						><span class="me-0.5">#</span>Personal Life and Perspectives</a
+					>
+				</li>
+				<li>
+					<a
+						aria-label={`Scroll to section: Passions and Hobbies`}
+						class={`block line-clamp-2 hover:text-accent mt-3`}
+						href={`#passions-and-hobbies`}
+						><span class="me-0.5">#</span>Passions and Hobbies
+					</a>
+				</li>
+				<li>
+					<a
+						aria-label={`Scroll to section: Future Dreams and Philosophies`}
+						class={`block line-clamp-2 hover:text-accent mt-3`}
+						href={`#future-dreams-and-philosophies`}
+						><span class="me-0.5">#</span>Future Dreams and Philosophies</a
+					>
+				</li>
+			</ul>
+			<Image class="rounded-lg" src={aboutImg} alt="Florian's photo" width={400} height={400} />
+		</aside>
 	</div>
 </PageLayout>
