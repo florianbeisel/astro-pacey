@@ -2,7 +2,7 @@
 title: "Microsoft's Token Authentication Fiasco"
 description: "Please enter a description of your post here, between 50-160 chars!"
 publishDate: 16 July 2023
-tags: []
+tags: [Microsoft, Authentication, Security]
 draft: false
 ---
 
