@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/Gallery.astro";
+import { getAlbumImages } from "@/utils/album";
+
+export async function getStaticPaths() {
+	const albums = await getCollection("album");
+
+	const paths = Object.values(albums).map((album) => {
+		return {
+			params: {
+				id: album.id,
+			},
+			props: {
+				album,
+			},
+		};
+	});
+
+	return paths;
+}
+
+const { album } = Astro.props;
+const images = await getAlbumImages(album.id);
+---
+
+<PageLayout meta={{ title: "Gallery" }}>
+	<h1 class="title mb-6">{album.data.title}</h1>
+	<div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
+		<section aria-label="Gallery">
+			<h2 class="title text-lg">{album.data.description}</h2>
+			<div class="mt-4">
+				<div class="container mx-auto my-8 sm:columns-2 md:columns-2 lg:columns-2 xl:columns-2">
+					{
+						images.map((image) => (
+							<Image
+								src={image}
+								alt={`Image from ${album.data.title} album`}
+								format="avif"
+								quality={50}
+								class="mb-4 rounded border border-transparent transition-all duration-300 ease-in-out hover:border-gray-300 hover:shadow-lg"
+								loading="lazy"
+							/>
+						))
+					}
+				</div>
+
+				<p class="my-4 text-lg">
+					<a href="/gallery/" class="text-white hover:underline">Go back →</a>
+				</p>
+			</div>
+		</section>
+	</div>
+</PageLayout>
